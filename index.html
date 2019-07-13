@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAVTTC</title>
+  <meta name="description" content="Free Bootstrap Theme by Bootstrap.com">
+  <meta name="keywords" content="Bootstrap Theme">
+
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="stylesheet" type="text/css" href="slider2.css">
+<script type="text/javascript">
+var count=1;
+var total=6;
+function slide(x){
+var Image=document.getElementById('img');
+count = count+x;
+if(count>total){count=1;}
+if(count<1){count=total;}
+Image.src="img2/img"+count+".jpg";
+}
+window.setInterval(function slideA(){
+var Image=document.getElementById('img');
+count = count+1;
+if(count>total){count=1;}
+if(count<1){count=total;}
+Image.src="img2/img"+count+".jpg";
+},4000)
+</script>
+</head>
+
+<body onLoad="slideA()">
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+		  
+        </button>
+        <a class="navbar-brand" href="index.html"><span><image src="img/Logo.png"/></span></a>
+	<span><h2>National Vocational & Technical <br>
+    Training Commission (NAVTTC), Pakistan</h2>
+    <h6>Federal Apex Body in Pakistan for Technical<br> Education & Vocational Training</h6></span>
+		
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          
+		<li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+		  <li><a href="objective.html">Objective</a></li>
+          <li><a href="contact.html">Contact</a></li>
+		 
+		  
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+  
+  <div class="container">
+  <div class="row">
+<div class="col-md-12">
+<div id="con" >
+<img src="img2/img1.jpg" id="img"/>
+<div id="LeftHolder"><img src="img2/left.png" onclick="slide(-1)" class="left"/></div>
+<div id="RightHolder"><img src="img2/right.png" onclick="slide(1)" class="right"/></div>
+</div>
+</div>
+ </div>
+</div>
+  
+  
+  
+  <div class="container">
+  <div class="row">
+<h1 align="center">Organogram</h1>
+  <div class="tree">
+    <ul>
+		<li>
+			<a href="#">Parent</a>
+			<ul>
+				<li>
+					<a href="#">Child</a>
+					<ul>
+						<li>
+							<a href="#">Grand Child</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Child</a>
+					<ul>
+						<li><a href="#">Grand Child</a></li>
+						<li>
+							<a href="#">Grand Child</a>
+							<ul>
+								<li>
+									<a href="#">Great Grand Child</a>
+								</li>
+								<li>
+									<a href="#">Great Grand Child</a>
+								</li>
+								<li>
+									<a href="#">Great Grand Child</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#">Grand Child</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+  </div>
+ </div>
+
+ 
+  
+  
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+
+    </div>
+  </footer>
+  <!--/ Footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
